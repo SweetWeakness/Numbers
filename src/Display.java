@@ -1,12 +1,7 @@
-import javax.naming.CompositeName;
 import javax.swing.*;
-import javax.swing.text.AbstractDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
 import java.util.ArrayList;
 
 public class Display {
@@ -38,6 +33,7 @@ public class Display {
 
 
         //панель
+
         JPanel butpan=new JPanel();
         butpan.setBounds(0,0,width,height);
         butpan.setBorder(BorderFactory.createLineBorder(Color.BLACK));
@@ -46,12 +42,8 @@ public class Display {
 
 
 
-
-
-
-
-
         //все кнопки и надписи
+
         final JButton ButAdd=new JButton("Ввести число");
         butpan.add(ButAdd);
         ButAdd.setBounds(30,75,width-60,40);
@@ -113,6 +105,7 @@ public class Display {
 
 
         //слушатели
+
         ButAdd.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ButAdd.setVisible(false);
